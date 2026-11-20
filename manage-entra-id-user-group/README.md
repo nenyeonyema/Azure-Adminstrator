@@ -16,10 +16,6 @@ Users and groups are the basic building blocks of any identity solution. In this
 
 My organization is building a new lab environment for pre-production testing of apps and services. A few engineers are being hired to manage the lab environment, including the virtual machines. To let them authenticate with Microsoft Entra ID, I was tasked with provisioning users and groups. To minimize administrative overhead, group membership had to update automatically based on job title.
 
-## Architecture
-
-> _Add the lab architecture diagram here._
-> `![Lab 01 architecture](./images/lab01-architecture.png)`
 
 ## Objectives
 
@@ -54,7 +50,7 @@ User accounts store identity data such as name, department, location, and contac
 5. Selected **Review + create**, then **Create**.
 
 
-> `![Create user](./images/created-and-invited-users.PNG)`
+> ![Create user](./images/created-and-invited-users.PNG)
 
 ### 1.2 Invite an external user
 
@@ -66,8 +62,8 @@ User accounts store identity data such as name, department, location, and contac
    - **Usage location:** `United States`
 4. Selected **Review + invite**, then **Invite**.
 
-> _Screenshot: invited guest user_
-> `![Invite external user](./images/invited-user.PNG)`
+> 
+> ![Invite external user](./images/invited-user.PNG)
 
 ### Result
 
@@ -102,7 +98,7 @@ Because the requirement was to minimize administrative overhead, I used a **dyna
 4. Saved the rule, then selected **Create**.
 
 
-> `![Group Created](./images/create-a-group.PNG)`
+> ![Group Created](./images/create-a-group.PNG)
 
 ### 2.2 Verify membership
 
@@ -110,10 +106,9 @@ Because the requirement was to minimize administrative overhead, I used a **dyna
 2. Checked **Manage > Members**.
 3. Confirmed both users with the job title `IT Lab Administrator` were added automatically.
 
-> _Note: dynamic membership can take a few minutes to process._
 
 >
-> `![Group members](./images/add-users-to-a-group.PNG)`
+> ![Group members](./images/add-users-to-a-group.PNG)
 
 ---
 
@@ -124,13 +119,6 @@ Because the requirement was to minimize administrative overhead, I used a **dyna
 - Internal users and **external (guest) users** can both be targeted by the same dynamic rule.
 - Security groups are the foundation for assigning access (for example, Azure RBAC roles) at scale rather than per user.
 
-## Challenges and Notes
-
-> _Add anything that went wrong or surprised you here, for example: delay before dynamic members appeared, a licensing or permission issue, or a guest invitation that needed to be accepted._
-
-## Cleanup
-
-> _Note whether you deleted the test users and group after the lab._
 
 ## References
 
