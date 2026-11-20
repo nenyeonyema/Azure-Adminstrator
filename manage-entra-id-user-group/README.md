@@ -62,8 +62,8 @@ User accounts store identity data such as name, department, location, and contac
    - **Usage location:** `United States`
 4. Selected **Review + invite**, then **Invite**.
 
-> 
-> ![Invite external user](./images/invited-user.PNG)
+>
+> ![Invite external user](./images/invited-user.png)
 
 ### Result
 
